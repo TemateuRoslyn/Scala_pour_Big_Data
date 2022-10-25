@@ -1,3 +1,5 @@
+import chapter01.Main
+
 @main def hello: Unit = 
   println("Hello world!")
   println(msg)
