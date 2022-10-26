@@ -1,5 +1,2 @@
-@main def hello: Unit = 
-  println("Hello world!")
-  println(msg)
-
-def msg = "I was compiled by Scala 3. :)"
+@main def hello: Unit =
+  println("Hello from the scala_pour_BIG_DATA !")
