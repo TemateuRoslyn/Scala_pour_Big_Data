@@ -56,10 +56,8 @@ lazy val chapter01 = project
 
 lazy val root = project
   .in(file("."))
-  .aggregate(chapter01)
-  .dependsOn(chapter01)
-  .aggregate(chapter02)
-  .dependsOn(chapter02)
+  .aggregate(chapter01, chapter02)
+  .dependsOn(chapter01, chapter02)
   .settings(
     name := "SCALA_FOR_BIG_DATA",
     commonSettings,
