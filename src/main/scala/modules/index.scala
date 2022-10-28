@@ -1,6 +1,7 @@
 package modules
 
 import chapter01.MainChapter01
+import chapter02.MainChapter02
 
 import exceptions.OutOfChoiceException
 
@@ -16,7 +17,6 @@ class Main {
     try {
         begin
     } catch {
-        case ex : NumberFormatException => begin
         case ex : Throwable => println("Erreur: Une erreur inconue: Fin du programme... \n" + ex.getMessage())
     }
 
@@ -52,11 +52,14 @@ class Main {
     try {
       chapter match {
           case 1 => println(MainChapter01.run)
+          case 2 => println(MainChapter02.run)
           case _ => throw new OutOfChoiceException("Ce chapitre n'est pas disponible")
       }
       println("Fin d'execution du chapitre  " + chapter)
     } catch {
-      case ex : OutOfChoiceException => println("Erreur : " + ex.getMessage())
+      case ex : OutOfChoiceException => {
+        println("Erreur : " + ex.getMessage())
+      }
     }
 
 
