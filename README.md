@@ -2,7 +2,7 @@
 
 Ce projet est la compilation des notes de cours et exercices sur l'apprentissage 
 du language `Scala` pour le Bigdata en utilisant l'ouvrage intitulé `Scala Programming for Big Data Analytics`
-de `Irfan Elahi`.
+d' `Irfan Elahi`.
 
 ### Utilisation
 
