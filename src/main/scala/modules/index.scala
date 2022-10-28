@@ -16,7 +16,6 @@ class Main {
     try {
         begin
     } catch {
-        case ex : NumberFormatException => begin
         case ex : Throwable => println("Erreur: Une erreur inconue: Fin du programme... \n" + ex.getMessage())
     }
 
@@ -56,7 +55,9 @@ class Main {
       }
       println("Fin d'execution du chapitre  " + chapter)
     } catch {
-      case ex : OutOfChoiceException => println("Erreur : " + ex.getMessage())
+      case ex : OutOfChoiceException => {
+        println("Erreur : " + ex.getMessage())
+      }
     }
 
 
