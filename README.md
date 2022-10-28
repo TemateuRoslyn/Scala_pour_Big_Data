@@ -6,8 +6,16 @@ de `Irfan Elahi`.
 
 ### Utilisation
 
-Pour compile ce projet, il faut se déplacer à la racine du projet et executer: `sbt clean compile`.
-Une fois le projet compilé, vous pourrer l'executer a chaque fois avec la commande: `sbt run`.
+Veuillez suivre les étapes suivantes pour démarrer ce projet en local
+
+[1] Commencez par récupérer le projet, déplacez-vous dans votre espace de travail puis taper la commande:
+`git clone https://github.com/TemateuRoslyn/Scala_pour_Big_Data.git`.
+
+[2] Ensuite déplacez-vous dans le projet: cd  `Scala_pour_Big_Data`.
+
+[3] Pour compile ce projet, il faut se déplacer à la racine du projet et executer: `sbt clean compile`.
+
+[4] Une fois le projet compilé, vous pourrer l' executer a chaque fois avec la commande: `sbt run`.
 
 ## Structuration du projet
 
