@@ -1,4 +1,4 @@
-package chapter02
+package chapter11
 
 object MainChapter11 {
   val message = "Hello from Chapter 11, I was compiled with Scala 3! :)"

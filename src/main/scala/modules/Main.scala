@@ -2,11 +2,23 @@ package modules
 
 import chapter01.MainChapter01
 import chapter02.MainChapter02
+import chapter03.MainChapter03
+import chapter04.MainChapter04
+import chapter05.MainChapter05
+import chapter06.MainChapter06
+import chapter07.MainChapter07
+import chapter08.MainChapter08
+import chapter09.MainChapter09
+import chapter10.MainChapter10
+import chapter11.MainChapter11
+import chapter12.MainChapter12
+import chapter13.MainChapter13
+import chapter14.MainChapter14
 
 import exceptions.OutOfChoiceException
 
 
-class Main {
+class App {
 
   /**
     * Cette methode est la principale de cette classe et permet de 
@@ -51,8 +63,20 @@ class Main {
   def caseChapter(chapter: Int = 1) : Unit =
     try {
       chapter match {
-          case 1 => println(MainChapter01.run)
-          case 2 => println(MainChapter02.run)
+          case 1   => println(MainChapter01.run)
+          case 2   => println(MainChapter02.run)
+          case 3   => println(MainChapter03.run)
+          case 4   => println(MainChapter04.run)
+          case 5   => println(MainChapter05.run)
+          case 6   => println(MainChapter06.run)
+          case 7   => println(MainChapter07.run)
+          case 8   => println(MainChapter08.run)
+          case 9   => println(MainChapter09.run)
+          case 10  => println(MainChapter10.run)
+          case 11  => println(MainChapter11.run)
+          case 12  => println(MainChapter12.run)
+          case 13  => println(MainChapter13.run)
+          case 14  => println(MainChapter14.run)
           case _ => throw new OutOfChoiceException("Ce chapitre n'est pas disponible")
       }
       println("Fin d'execution du chapitre  " + chapter)
@@ -72,13 +96,13 @@ class Main {
   def continueEvaluation: Int = 
     try {
       var continue: Int = 1
-      println("""Souhaitez-vous continuer les test : 
+      println("""Souhaitez-vous continuer les tests : 
           -1- pour rentrez au menu principal
           -0- Pour arreter l'utilitaire de test""")
       continue = scala.io.StdIn.readInt()
       continue match {
-        case 0  => return continue
-        case 1  => return continue
+        case 0   => return continue
+        case 1   => return continue
         case _: Int => throw new OutOfChoiceException("Ce choix n'est pas disponible")
       }
       return continue

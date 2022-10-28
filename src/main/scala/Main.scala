@@ -1,8 +1,6 @@
-import  modules.Main
+import  modules.App
 
 @main def main: Unit =
-    var startAll : Main = new Main()
+    var startAll : App = new App()
     startAll.run
-  // println(MainChapter01.message)
-  // println(MainChapter02.message)
 
