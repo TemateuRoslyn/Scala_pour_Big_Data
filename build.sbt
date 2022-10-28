@@ -20,10 +20,44 @@ lazy val commonSettings = Seq(
 )
 
 
+
+/**
+  *    ICI VOUS AVEZ LA LISTE DES CONFIGURATOIN POUR CHAQUE MODULE DE L'APPLICATION SCALA
+  * 
+  * =========================================================================================
+  */
+
+
+
+
+
+lazy val chapter01 = project
+ .in(file("src/main/scala/modules/build/chapter01"))
+ .settings(
+    name := "Chapter 01",
+    commonSettings
+ )
+
+ lazy val chapter02 = project
+ .in(file("src/main/scala/modules/build/chapter02"))
+ .settings(
+    name := "Chapter 02",
+    commonSettings
+ )
+
+
+
+ /**
+  *    ICI VOUS AVEZ LA LES CONFIGURATION POUR LE PROJET PRINCIPALE
+  * 
+  * ==================================================================
+  */
+
+
 lazy val root = project
   .in(file("."))
-  // .aggregate(chapter01)
-  // .dependsOn(chapter01)
+  .aggregate(chapter01, chapter02)
+  .dependsOn(chapter01, chapter02)
   .settings(
     name := "SCALA_FOR_BIG_DATA",
     commonSettings,

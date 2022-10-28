@@ -1,2 +1,8 @@
-@main def hello: Unit =
-  println("Hello from the scala_pour_BIG_DATA !")
+import  modules.Main
+
+@main def main: Unit =
+    var startAll : Main = new Main()
+    startAll.run
+  // println(MainChapter01.message)
+  // println(MainChapter02.message)
+
