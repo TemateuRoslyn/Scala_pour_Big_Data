@@ -1,5 +1,7 @@
 package modules
 
+import java.io.File
+
 import chapter01.MainChapter01
 import chapter02.MainChapter02
 import chapter03.MainChapter03
@@ -17,6 +19,8 @@ import chapter14.MainChapter14
 
 import exceptions.OutOfChoiceException
 
+import ressource.Log
+
 
 class App {
 
@@ -25,8 +29,8 @@ class App {
     * tester toutes les autres.
     */
   def run : Unit = 
-    
     try {
+        removeLogFiles()
         begin
     } catch {
         case ex : Throwable => println("Erreur: Une erreur inconue: Fin du programme... \n" + ex.getMessage())
@@ -178,4 +182,18 @@ class App {
     print("*")
 
 
+    /**
+      * Cette fonction supprime tous les fichier de log au lancement de l'application
+      */
+  def removeLogFiles() : Unit =
+    var i: Int = 1
+    while (i<=14)
+      var path: String = Log.path
+      if(i<10)
+        val file = new File(path + "chapter0" + i +"_log.txt")
+        file.delete()
+      else
+        val file = new File(path + "chapter" + i +"_log.txt")
+        file.delete()
+      i+=1
 }
