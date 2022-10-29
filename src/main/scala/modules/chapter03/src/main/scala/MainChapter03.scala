@@ -2,7 +2,7 @@ package chapter03
 
 import  chapter03.notes.NoteChapter03
 import  chapter03.exercices.ExerciceChapter03
-object MainChapter03 {
+class MainChapter03 {
   val message = "Hello from Chapter 03, I was compiled with Scala 3! :)"
 
   def run: Unit =

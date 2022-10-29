@@ -1,6 +1,6 @@
 package chapter05
 
-object MainChapter05 {
+class MainChapter05 {
   val message = "Hello from Chapter 05, I was compiled with Scala 3! :)"
 
   def run: Unit =

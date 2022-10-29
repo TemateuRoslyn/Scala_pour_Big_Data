@@ -1,6 +1,6 @@
 package modules
 
-import java.io.File
+import java.io.{ File, FileWriter, FileOutputStream }
 
 import chapter01.MainChapter01
 import chapter02.MainChapter02
@@ -24,6 +24,8 @@ import ressource.Log
 
 class App {
 
+  var log: String = ""
+
   /**
     * Cette methode est la principale de cette classe et permet de 
     * tester toutes les autres.
@@ -31,9 +33,11 @@ class App {
   def run : Unit = 
     try {
         removeLogFiles()
-        begin
+        begin()
     } catch {
-        case ex : Throwable => println("Erreur: Une erreur inconue: Fin du programme... \n" + ex.getMessage())
+        case ex : Throwable => {
+          customPrintln("Erreur: Une erreur inconue: Fin du programme... \n " + ex.getMessage())
+        }
     }
 
 
@@ -41,19 +45,20 @@ class App {
     /**
       * C'est cette fonction qui assure le scheduling entre les differents chapitres
       */
-  def begin : Unit =
+  def begin() : Unit =
     var continue, chapter : Int =  1 
     while(continue == 1)
+        customPrint("=====================   Netoyage d'ecran =======================")
         print("\u001b[2J")
         showMenu
         try {
-          println("\n Veuillez entrez le numero du chapitre que vous souhaitez interroger, Ex: 3")
+          customPrintln("\n Veuillez entrez le numero du chapitre que vous souhaitez interroger, Ex: 3")
           chapter = scala.io.StdIn.readInt()
           caseChapter(chapter)
           continue = continueEvaluation
         } catch {
             case ex : NumberFormatException => {
-              begin
+              begin()
             }
         }
 
@@ -67,26 +72,26 @@ class App {
   def caseChapter(chapter: Int = 1) : Unit =
     try {
       chapter match {
-          case 1   => println(MainChapter01.run)
-          case 2   => println(MainChapter02.run)
-          case 3   => println(MainChapter03.run)
-          case 4   => println(MainChapter04.run)
-          case 5   => println(MainChapter05.run)
-          case 6   => println(MainChapter06.run)
-          case 7   => println(MainChapter07.run)
-          case 8   => println(MainChapter08.run)
-          case 9   => println(MainChapter09.run)
-          case 10  => println(MainChapter10.run)
-          case 11  => println(MainChapter11.run)
-          case 12  => println(MainChapter12.run)
-          case 13  => println(MainChapter13.run)
-          case 14  => println(MainChapter14.run)
+          case 1   => new MainChapter01().run
+          case 2   => new MainChapter02().run
+          case 3   => new MainChapter03().run
+          case 4   => new MainChapter04().run
+          case 5   => new MainChapter05().run
+          case 6   => new MainChapter06().run
+          case 7   => new MainChapter07().run
+          case 8   => new MainChapter08().run
+          case 9   => new MainChapter09().run
+          case 10  => new MainChapter10().run
+          case 11  => new MainChapter11().run
+          case 12  => new MainChapter12().run
+          case 13  => new MainChapter13().run
+          case 14  => new MainChapter14().run
           case _ => throw new OutOfChoiceException("Ce chapitre n'est pas disponible")
       }
-      println("Fin d'execution du chapitre  " + chapter)
+      customPrintln("Fin d'execution du chapitre  " + chapter)
     } catch {
       case ex : OutOfChoiceException => {
-        println("Erreur : " + ex.getMessage())
+        customPrintln("Erreur : " + ex.getMessage())
       }
     }
 
@@ -100,12 +105,15 @@ class App {
   def continueEvaluation: Int = 
     try {
       var continue: Int = 1
-      println("""Souhaitez-vous continuer les tests : 
+      customPrintln("""Souhaitez-vous continuer les tests : 
           -1- pour rentrez au menu principal
           -0- Pour arreter l'utilitaire de test""")
       continue = scala.io.StdIn.readInt()
       continue match {
-        case 0   => return continue
+        case 0   => return {
+          writeMainLog(log)
+          continue
+        }
         case 1   => return continue
         case _: Int => throw new OutOfChoiceException("Ce choix n'est pas disponible")
       }
@@ -113,7 +121,7 @@ class App {
     } catch {
         case ex : NumberFormatException => continueEvaluation
         case ex : OutOfChoiceException => {
-          println("Erreur : " + ex.getMessage())
+          customPrintln("Erreur : " + ex.getMessage())
           continueEvaluation
         }
     }
@@ -125,7 +133,7 @@ class App {
     * vous souhaitez utiliser orsque vous lancer le projet.
     */      
   def showMenu: Unit = 
-    println("")
+    customPrintln("")
     printFillLine()
     printTabLine(2, 2,  "                                                                                                                   ")
     printTabLine(8, 8,  "Scala pour le Big Data")
@@ -153,7 +161,9 @@ class App {
     printTabLine(3, 11,  "Chapitre 14: Hello Apache Spark    ")
     printTabLine(2, 2, "                                                                                                                   ")
     printFillLine()
-    println("")
+    customPrintln("")
+
+
 
     /**
       * Affiche une ligne remplie d'etoile suivant une longueur passee en paramtere
@@ -162,7 +172,7 @@ class App {
       */
   def printFillLine(lineSize : Int = 130) : Unit = 
     var i : Int = 1
-    println()
+    customPrintln()
     while(i < lineSize) 
         print("*")
         i+=1
@@ -174,7 +184,7 @@ class App {
     while(i < leftSpace)
         print("\t") 
         i+=1
-    print(someText)
+    customPrint(someText)
     i = 1
     while(i < rightSpace)
         print("\t") 
@@ -187,6 +197,10 @@ class App {
       */
   def removeLogFiles() : Unit =
     var i: Int = 1
+
+    val main_file = new File(Log.main_log_path)
+    main_file.delete()
+
     while (i<=14)
       var path: String = Log.path
       if(i<10)
@@ -196,4 +210,17 @@ class App {
         val file = new File(path + "chapter" + i +"_log.txt")
         file.delete()
       i+=1
+
+  def writeMainLog(consoleMessage: String = ""): Unit =
+    val fos = new FileOutputStream(new File(Log.main_log_path))
+    Console.withOut(fos) { println(consoleMessage) }
+
+    
+  def customPrintln(message: String = "") : Unit =
+    log+=message+"\n"
+    println(message)
+
+  def customPrint(message: String = "") : Unit =
+    log+=message+"\n"
+    print(message)
 }

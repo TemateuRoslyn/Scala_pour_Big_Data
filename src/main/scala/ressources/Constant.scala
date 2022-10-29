@@ -7,6 +7,8 @@ package object Log {
 
     val path: String               = "src/main/scala/logs/"
 
+    val main_log_path:      String = path + "main_log.txt"
+
     val chapter01_log_path: String = path + "chapter01_log.txt"
     val chapter02_log_path: String = path + "chapter02_log.txt"
     val chapter03_log_path: String = path + "chapter03_log.txt"

@@ -3,7 +3,7 @@ package chapter03.exercices
 import java.io.{File, FileOutputStream}
 import ressource.Log
 
-object ExerciceChapter03 {
+object ExerciceChapter03  {
 
   def run: Unit =
 
@@ -11,7 +11,7 @@ object ExerciceChapter03 {
 
     println("\n\nB - Exercice du chapitre 03 :")
     println("    -------------------------\n")
-    
+
     writeLog(Log.chapter03_log_path, message)
 
     // print("\n   1-) Définition de mot clés: \n\tJVM: JAVA VIRTUAL MACHINE \n\tJRE: JAVA RUNTIME ENVIRONNMENT \n\tJDK: JAVA DEVELOPMENT KIT \n\tBytecode: Code executable par une JVM")
