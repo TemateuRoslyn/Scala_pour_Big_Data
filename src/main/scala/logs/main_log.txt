@@ -70,10 +70,6 @@ Fin d'execution du chapitre  2
 Souhaitez-vous continuer les tests : 
           -1- pour rentrez au menu principal
           -0- Pour arreter l'utilitaire de test
-Erreur : Ce choix n'est pas disponible
-Souhaitez-vous continuer les tests : 
-          -1- pour rentrez au menu principal
-          -0- Pour arreter l'utilitaire de test
 =====================   Netoyage d'ecran =======================
 
 
@@ -107,6 +103,10 @@ Chapitre 14: Hello Apache Spark
 
  Veuillez entrez le numero du chapitre que vous souhaitez interroger, Ex: 3
 Fin d'execution du chapitre  3
+Souhaitez-vous continuer les tests : 
+          -1- pour rentrez au menu principal
+          -0- Pour arreter l'utilitaire de test
+Erreur : Ce choix n'est pas disponible
 Souhaitez-vous continuer les tests : 
           -1- pour rentrez au menu principal
           -0- Pour arreter l'utilitaire de test

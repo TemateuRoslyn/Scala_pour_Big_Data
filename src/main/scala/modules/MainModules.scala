@@ -21,10 +21,12 @@ import exceptions.OutOfChoiceException
 
 import ressource.Log
 
+import  shared.CustomParent
 
-class App {
 
-  var log: String = ""
+class App extends CustomParent {
+
+  
 
   /**
     * Cette methode est la principale de cette classe et permet de 
@@ -214,13 +216,5 @@ class App {
   def writeMainLog(consoleMessage: String = ""): Unit =
     val fos = new FileOutputStream(new File(Log.main_log_path))
     Console.withOut(fos) { println(consoleMessage) }
-
-    
-  def customPrintln(message: String = "") : Unit =
-    log+=message+"\n"
-    println(message)
-
-  def customPrint(message: String = "") : Unit =
-    log+=message+"\n"
-    print(message)
+  
 }
