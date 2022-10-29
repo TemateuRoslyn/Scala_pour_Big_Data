@@ -23,3 +23,84 @@ Ce projet adopte une structure en module et tout se retrouve centralisé dans le
 la racine du projet.
 
 Il ya à disposition des classes de capture d'exceptions dans le dossier principale de gestion des exception.
+
+
+## Les package du projet
+
+Vous avez ici une  sorte de MVC avec des package à la place, voilà la liste de tous les packages:
+
+`src/main/scala/exection`
+`src/main/scala/logs`
+`src/main/scala/modules`
+`src/main/scala/ressources`
+`src/main/scala/shared`
+## Le package des modules
+
+Ce projet contient un ensemble de module qui representent chaque chapitre du PDF de cette formation, la liste:
+
+`src/main/scala/modules`
+
+`src/main/scala/modules/chapter01`
+`src/main/scala/modules/chapter02`
+`src/main/scala/modules/chapter03`
+`src/main/scala/modules/chapter04`
+`src/main/scala/modules/chapter05`
+`src/main/scala/modules/chapter06`
+`src/main/scala/modules/chapter07`
+`src/main/scala/modules/chapter08`
+`src/main/scala/modules/chapter09`
+`src/main/scala/modules/chapter10`
+`src/main/scala/modules/chapter11`
+`src/main/scala/modules/chapter12`
+`src/main/scala/modules/chapter13`
+`src/main/scala/modules/chapter14`
+## Le package des Logs
+
+Dans ce projet il est possible d'obtenir les logs chacun de module de ce projet.
+les logs se trouve ici: 
+
+`src/main/scala/logs`
+
+`src/main/scala/logs/main_log.txt`
+`src/main/scala/logs/chapter01_log.txt`
+`src/main/scala/logs/chapter02_log.txt`
+`src/main/scala/logs/chapter03_log.txt`
+`src/main/scala/logs/chapter04_log.txt`
+`src/main/scala/logs/chapter05_log.txt`
+`src/main/scala/logs/chapter06_log.txt`
+`src/main/scala/logs/chapter07_log.txt`
+`src/main/scala/logs/chapter08_log.txt`
+`src/main/scala/logs/chapter09_log.txt`
+`src/main/scala/logs/chapter10_log.txt`
+`src/main/scala/logs/chapter11_log.txt`
+`src/main/scala/logs/chapter12_log.txt`
+`src/main/scala/logs/chapter13_log.txt`
+`src/main/scala/logs/chapter14_log.txt`
+
+A chaque fois que vous lancerait la command: `sbt run`
+Tous les fichiers de logs seront supprimés et il seront créees de nouveau à chaque fois que vous exécutérez le chapitre concerné
+
+## Le package partage
+
+C'est un package qui contient des classes partages a toute l'application
+
+`src/main/scala/shared`
+
+`src/main/scala/shared/CustomParent.scala`
+
+## Le package des ressources
+
+Ce package contient les constantes globales utilisables a l'échelle de l'application comme les noms des fichier de logs et les chemins d'access
+
+`src/main/scala/ressources`
+
+`src/main/scala/ressources/Constant.scala`
+
+## Le package des execption
+
+Ce package contient toutes des classes d'exceptions personnalisées et utilisable à l'échelle de l'application:
+
+`src/main/scala/exection`
+
+`src/main/scala/exection/OutOfChoiceException.scala`
+
