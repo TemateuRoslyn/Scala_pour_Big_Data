@@ -78,20 +78,20 @@ class App extends CustomParent {
   def caseChapter(chapter: Int = 1) : Unit =
     try {
       chapter match {
-          case 1   => new MainChapter01().run
-          case 2   => new MainChapter02().run
-          case 3   => new MainChapter03().run
-          case 4   => new MainChapter04().run
-          case 5   => new MainChapter05().run
-          case 6   => new MainChapter06().run
-          case 7   => new MainChapter07().run
-          case 8   => new MainChapter08().run
-          case 9   => new MainChapter09().run
-          case 10  => new MainChapter10().run
-          case 11  => new MainChapter11().run
-          case 12  => new MainChapter12().run
-          case 13  => new MainChapter13().run
-          case 14  => new MainChapter14().run
+          case 1   => new MainChapter01().run()
+          case 2   => new MainChapter02().run()
+          case 3   => new MainChapter03().run()
+          case 4   => new MainChapter04().run()
+          case 5   => new MainChapter05().run()
+          case 6   => new MainChapter06().run()
+          case 7   => new MainChapter07().run()
+          case 8   => new MainChapter08().run()
+          case 9   => new MainChapter09().run()
+          case 10  => new MainChapter10().run()
+          case 11  => new MainChapter11().run()
+          case 12  => new MainChapter12().run()
+          case 13  => new MainChapter13().run()
+          case 14  => new MainChapter14().run()
           case _ => throw new OutOfChoiceException("Ce chapitre n'est pas disponible")
       }
       customPrintln("Fin d'execution du chapitre  " + chapter)

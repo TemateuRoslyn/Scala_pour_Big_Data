@@ -1,8 +1,8 @@
 package chapter02.exercices
 
-object ExerciceChapter02 {
+class ExerciceChapter02 {
 
-  def run: Unit =
+  def run(): Unit =
     println("\n\nB - Exercice du chapitre 02 :")
     println("    -------------------------\n")
     print("\n   1-) Installer Scala sur Linux sans Connexion: \n\t- Pour ce faire il suffit d'avoir l'archive de sbt a disposition puis de la \n\tdécompresser dans votre répertoire de travail")

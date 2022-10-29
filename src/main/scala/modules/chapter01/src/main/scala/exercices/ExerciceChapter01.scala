@@ -1,8 +1,8 @@
 package chapter01.exercices
 
-object ExerciceChapter01 {
+class ExerciceChapter01 {
 
-  def run: Unit =
+  def run(): Unit =
     println("\n\nB - Exercice du chapitre 01 :")
     println("    -------------------------\n")
     print("\n   1-) Définition de mot clés: \n\tJVM: JAVA VIRTUAL MACHINE \n\tJRE: JAVA RUNTIME ENVIRONNMENT \n\tJDK: JAVA DEVELOPMENT KIT \n\tBytecode: Code executable par une JVM")

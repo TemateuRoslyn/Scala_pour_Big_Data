@@ -10,9 +10,9 @@ import  chapter03.exercices.ExerciceChapter03
 class MainChapter03 {
   val message = "Hello from Chapter 03, I was compiled with Scala 3! :)"
 
-  def run: Unit =
+  def run(): Unit =
     println("==================  Debut de l'execution du chapitre 03  ==========================\n")
-    NoteChapter03.run
-    new ExerciceChapter03().run
+    new NoteChapter03().run()
+    new ExerciceChapter03().run()
     println("\n==================  Fin de l'execution du chapitre 03  ==========================")
 }
