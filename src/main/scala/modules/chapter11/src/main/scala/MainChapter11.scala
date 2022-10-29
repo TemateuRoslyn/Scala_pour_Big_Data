@@ -1,6 +1,10 @@
 package chapter11
 
-object MainChapter11 {
+/**
+  * @author Temateu Roslyn
+  * @email temateuroslynf32@gmail.com
+  */
+class MainChapter11 {
   val message = "Hello from Chapter 11, I was compiled with Scala 3! :)"
 
   def run: Unit =
