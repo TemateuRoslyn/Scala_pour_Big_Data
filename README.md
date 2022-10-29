@@ -4,7 +4,7 @@ Ce projet est la compilation des notes de cours et exercices sur l'apprentissage
 du language `Scala` pour le Bigdata en utilisant l'ouvrage intitulé `Scala Programming for Big Data Analytics`
 d' `Irfan Elahi`.
 
-## Utilisation
+## Démarrer le projet
 
 Veuillez suivre les étapes suivantes pour démarrer ce projet en local
 
@@ -34,6 +34,7 @@ Vous avez ici une  sorte de MVC avec des package à la place, voilà la liste de
 `src/main/scala/modules`
 `src/main/scala/ressources`
 `src/main/scala/shared`
+
 ## Le package des modules
 
 Ce projet contient un ensemble de module qui representent chaque chapitre du PDF de cette formation, la liste:
@@ -54,6 +55,7 @@ Ce projet contient un ensemble de module qui representent chaque chapitre du PDF
 `src/main/scala/modules/chapter12`
 `src/main/scala/modules/chapter13`
 `src/main/scala/modules/chapter14`
+
 ## Le package des Logs
 
 Dans ce projet il est possible d'obtenir les logs chacun de module de ce projet.
@@ -80,9 +82,9 @@ les logs se trouve ici:
 A chaque fois que vous lancerait la command: `sbt run`
 Tous les fichiers de logs seront supprimés et il seront créees de nouveau à chaque fois que vous exécutérez le chapitre concerné
 
-## Le package partage
+## Le package partagé
 
-C'est un package qui contient des classes partages a toute l'application
+C'est un package qui contient des classes partagés a toute l'application
 
 `src/main/scala/shared`
 
@@ -96,7 +98,7 @@ Ce package contient les constantes globales utilisables a l'échelle de l'applic
 
 `src/main/scala/ressources/Constant.scala`
 
-## Le package des execption
+## Le package des execptions
 
 Ce package contient toutes des classes d'exceptions personnalisées et utilisable à l'échelle de l'application:
 
