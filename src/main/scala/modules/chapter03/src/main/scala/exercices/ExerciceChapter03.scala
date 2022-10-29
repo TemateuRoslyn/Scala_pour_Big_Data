@@ -1,9 +1,13 @@
 package chapter03.exercices
 
 import java.io.{File, FileOutputStream}
+
 import ressource.Log
 
-object ExerciceChapter03  {
+import  shared.CustomParent
+
+
+class ExerciceChapter03 extends CustomParent  {
 
   def run: Unit =
 
@@ -11,8 +15,7 @@ object ExerciceChapter03  {
 
     println("\n\nB - Exercice du chapitre 03 :")
     println("    -------------------------\n")
-
-    writeLog(Log.chapter03_log_path, message)
+    writeLog(message, Log.chapter03_log_path)
 
     // print("\n   1-) Définition de mot clés: \n\tJVM: JAVA VIRTUAL MACHINE \n\tJRE: JAVA RUNTIME ENVIRONNMENT \n\tJDK: JAVA DEVELOPMENT KIT \n\tBytecode: Code executable par une JVM")
     // print("\n   2-) Pourquoi Scala a été dévéloppé: \n\tA la base Scala a été dévéloppé pour concurrencer Java qui était très lent.")
@@ -22,7 +25,5 @@ object ExerciceChapter03  {
     // print("\n   6-) Les produits développés en Scala ?: \n\t- Le backend de la plateforme Coursera")
     // print("\n   7-) Les performances de Python ?: \n\t- Il faut savoir que Python est un langage dit « interprété ». Cela veut dire que votre \n\tcode est transmis d’abord à une machine virtuelle connue sous le nom d’interpréteur de bytecode, avant d’être compilé.\n\t- De plus, Python stocke ses attributs dans un dictionnaire. \n\t- Enfin, il faut savoir que Python est peu favorable au multithreading\n\n")
     
-  def writeLog(path: String = "", consoleMessage: String = "Default console message from chapter 03") =
-    val fos = new FileOutputStream(new File(path))
-    Console.withOut(fos) { println(consoleMessage) }
+
 }

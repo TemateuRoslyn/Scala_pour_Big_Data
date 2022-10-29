@@ -13,6 +13,6 @@ class MainChapter03 {
   def run: Unit =
     println("==================  Debut de l'execution du chapitre 03  ==========================\n")
     NoteChapter03.run
-    ExerciceChapter03.run
+    new ExerciceChapter03().run
     println("\n==================  Fin de l'execution du chapitre 03  ==========================")
 }

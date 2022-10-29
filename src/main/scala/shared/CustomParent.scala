@@ -41,4 +41,19 @@ class CustomParent {
     def writeMainLog(consoleMessage: String = ""): Unit =
         val fos = new FileOutputStream(new File(Log.main_log_path))
         Console.withOut(fos) { println(consoleMessage) }
+
+
+
+    /**
+     * Cette fonction permet d'ecrire toutes les logs de l'application dans le fichier specifie:
+     *          ==============   src/main/scala/logs/filename.txt  ================
+     *
+     * @param consoleMessage
+     */
+    def writeLog(consoleMessage: String = "", filename: String = ""): Unit =
+        val fos = new FileOutputStream(new File(filename))
+        Console.withOut(fos) { println(consoleMessage) }
+    
+
+
 }
