@@ -2,6 +2,11 @@ package chapter03
 
 import  chapter03.notes.NoteChapter03
 import  chapter03.exercices.ExerciceChapter03
+
+/**
+  * @author Temateu Roslyn
+  * @email temateuroslynf32@gmail.com
+  */
 class MainChapter03 {
   val message = "Hello from Chapter 03, I was compiled with Scala 3! :)"
 

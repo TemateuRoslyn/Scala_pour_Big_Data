@@ -34,39 +34,7 @@ Fin d'execution du chapitre  1
 Souhaitez-vous continuer les tests : 
           -1- pour rentrez au menu principal
           -0- Pour arreter l'utilitaire de test
-=====================   Netoyage d'ecran =======================
-
-
-                                                                                                                   
-Scala pour le Big Data
-Veuillez choisir le chapitre que vous souhaitez executer et n'oubliez pas : Arreter les tests : -0- continuer : -1-
-                                                                                                                   
-
-                                                                                                                   
-Liste des chapitre dispo...
-===========================
-                                                                                                                   
-                                                                                                                   
-Chapitre 01: Scala Language
-Chapitre 02: Installation  
-Chapitre 03: Scala Shell   
-Chapitre 04: Variables     
-Chapitre 05: Data Types    
-Chapitre 06: Conditional Statements
-Chapitre 07: Code Blocks   
-Chapitre 08: Functions     
-Chapitre 09: Collections   
-Chapitre 10: Loops         
-Chapitre 11: Classes and Packages  
-Chapitre 11: Exception Handling    
-Chapitre 13: Building and Packaging
-Chapitre 14: Hello Apache Spark    
-                                                                                                                   
-
-
-
- Veuillez entrez le numero du chapitre que vous souhaitez interroger, Ex: 3
-Fin d'execution du chapitre  2
+Erreur : Ce choix n'est pas disponible
 Souhaitez-vous continuer les tests : 
           -1- pour rentrez au menu principal
           -0- Pour arreter l'utilitaire de test
@@ -106,7 +74,39 @@ Fin d'execution du chapitre  3
 Souhaitez-vous continuer les tests : 
           -1- pour rentrez au menu principal
           -0- Pour arreter l'utilitaire de test
-Erreur : Ce choix n'est pas disponible
+=====================   Netoyage d'ecran =======================
+
+
+                                                                                                                   
+Scala pour le Big Data
+Veuillez choisir le chapitre que vous souhaitez executer et n'oubliez pas : Arreter les tests : -0- continuer : -1-
+                                                                                                                   
+
+                                                                                                                   
+Liste des chapitre dispo...
+===========================
+                                                                                                                   
+                                                                                                                   
+Chapitre 01: Scala Language
+Chapitre 02: Installation  
+Chapitre 03: Scala Shell   
+Chapitre 04: Variables     
+Chapitre 05: Data Types    
+Chapitre 06: Conditional Statements
+Chapitre 07: Code Blocks   
+Chapitre 08: Functions     
+Chapitre 09: Collections   
+Chapitre 10: Loops         
+Chapitre 11: Classes and Packages  
+Chapitre 11: Exception Handling    
+Chapitre 13: Building and Packaging
+Chapitre 14: Hello Apache Spark    
+                                                                                                                   
+
+
+
+ Veuillez entrez le numero du chapitre que vous souhaitez interroger, Ex: 3
+Fin d'execution du chapitre  2
 Souhaitez-vous continuer les tests : 
           -1- pour rentrez au menu principal
           -0- Pour arreter l'utilitaire de test

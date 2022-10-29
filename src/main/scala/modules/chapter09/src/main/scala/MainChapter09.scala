@@ -1,5 +1,9 @@
 package chapter09
 
+/**
+  * @author Temateu Roslyn
+  * @email temateuroslynf32@gmail.com
+  */
 class MainChapter09 {
   val message = "Hello from Chapter 09, I was compiled with Scala 3! :)"
 

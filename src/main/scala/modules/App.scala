@@ -1,6 +1,6 @@
 package modules
 
-import java.io.{ File, FileWriter, FileOutputStream }
+import java.io.File
 
 import chapter01.MainChapter01
 import chapter02.MainChapter02
@@ -24,6 +24,10 @@ import ressource.Log
 import  shared.CustomParent
 
 
+/**
+  * @author Temateu Roslyn
+  * @email temateuroslynf32@gmail.com
+  */
 class App extends CustomParent {
 
   
@@ -32,7 +36,7 @@ class App extends CustomParent {
     * Cette methode est la principale de cette classe et permet de 
     * tester toutes les autres.
     */
-  def run : Unit = 
+  def run() : Unit = 
     try {
         removeLogFiles()
         begin()
@@ -212,9 +216,5 @@ class App extends CustomParent {
         val file = new File(path + "chapter" + i +"_log.txt")
         file.delete()
       i+=1
-
-  def writeMainLog(consoleMessage: String = ""): Unit =
-    val fos = new FileOutputStream(new File(Log.main_log_path))
-    Console.withOut(fos) { println(consoleMessage) }
   
 }
