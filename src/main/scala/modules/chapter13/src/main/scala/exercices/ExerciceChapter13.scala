@@ -1,20 +1,20 @@
-package chapter03.exercices
+package chapter13.exercices
 
 import ressource.Log
 
 import  shared.CustomParent
 
 
-class ExerciceChapter03 extends CustomParent  {
+class ExerciceChapter13 extends CustomParent  {
 
   def run(): Unit =
 
-    val message:       String = "\t From chapter 03 \n\nMessage: Maestros apprend le language scala"
+    val message:       String = "\t From chapter 13 \n\nMessage: Maestros apprend le language scala"
 
-    println("\n\nB - Exercice du chapitre 03 :")
+    println("\n\nB - Exercice du chapitre 13 :")
     println("    -------------------------\n")
 
-    writeLog(message, Log.chapter03_log_path)
+    writeLog(message, Log.chapter13_log_path)
 
     print("\n   1-) Utilisation de la tabulation: \n\tDans le cas des entiers ou des chaine, la tabulation permet d'avoir toute les information sur le type d'une variale.")
     print("\n   2-) Exemple de commade: \n\t:sh  Ex: :sh ls -al \n\t:load Ex: :load /path/to/file")

@@ -1,7 +1,5 @@
 package chapter04.exercices
 
-import java.io.{File, FileOutputStream}
-
 import ressource.Log
 
 import  shared.CustomParent

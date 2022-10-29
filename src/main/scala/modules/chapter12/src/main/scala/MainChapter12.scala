@@ -1,5 +1,8 @@
 package chapter12
 
+import  chapter12.notes.NoteChapter12
+import  chapter12.exercices.ExerciceChapter12
+
 /**
   * @author Temateu Roslyn
   * @email temateuroslynf32@gmail.com
@@ -9,6 +12,7 @@ class MainChapter12 {
 
   def run(): Unit =
     println("==================  Debut de l'execution du chapitre 12  ==========================\n")
-    println(message)
+    new NoteChapter12().run()
+    new ExerciceChapter12().run()
     println("\n==================  Fin de l'execution du chapitre 12  ==========================")
 }

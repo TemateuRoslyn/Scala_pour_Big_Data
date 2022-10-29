@@ -1,10 +1,18 @@
 package chapter01.exercices
+import ressource.Log
 
-class ExerciceChapter01 {
+import  shared.CustomParent
+
+class ExerciceChapter01 extends CustomParent {
 
   def run(): Unit =
+    val message:       String = "\t From chapter 01 \n\nMessage: Maestros apprend le language scala"
+
     println("\n\nB - Exercice du chapitre 01 :")
     println("    -------------------------\n")
+
+    writeLog(message, Log.chapter01_log_path)
+
     print("\n   1-) Définition de mot clés: \n\tJVM: JAVA VIRTUAL MACHINE \n\tJRE: JAVA RUNTIME ENVIRONNMENT \n\tJDK: JAVA DEVELOPMENT KIT \n\tBytecode: Code executable par une JVM")
     print("\n   2-) Pourquoi Scala a été dévéloppé: \n\tA la base Scala a été dévéloppé pour concurrencer Java qui était très lent.")
     print("\n   3-) Apache Spark ?: \n\tC'est un framework open source de calcul distribué. et aujourd'hui partie intégrante de la fondation Apache.")

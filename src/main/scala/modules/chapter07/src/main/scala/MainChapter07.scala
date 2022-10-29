@@ -1,5 +1,8 @@
 package chapter07
 
+import  chapter07.notes.NoteChapter07
+import  chapter07.exercices.ExerciceChapter07
+
 /**
   * @author Temateu Roslyn
   * @email temateuroslynf32@gmail.com
@@ -9,6 +12,7 @@ class MainChapter07 {
 
   def run(): Unit =
     println("==================  Debut de l'execution du chapitre 07  ==========================\n")
-    println(message)
+    new NoteChapter07().run()
+    new ExerciceChapter07().run()
     println("\n==================  Fin de l'execution du chapitre 07  ==========================")
 }
