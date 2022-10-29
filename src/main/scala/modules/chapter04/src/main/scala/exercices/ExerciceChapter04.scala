@@ -16,9 +16,15 @@ class ExerciceChapter04 extends CustomParent  {
 
     writeLog(message, Log.chapter04_log_path)
 
-    print("\n   1-) Utilisation de la tabulation: \n\tDans le cas des entiers ou des chaine, la tabulation permet d'avoir toute les information sur le type d'une variale.")
-    print("\n   2-) Exemple de commade: \n\t:sh  Ex: :sh ls -al \n\t:load Ex: :load /path/to/file")
-    print("\n   3-) spark-shell ?: \n\tLes commandes son disponibles sur spark-shell egalement.")
-    print("\n   4-) Augmenter la mémoire de scala ?: \n\tIl faut utiliser la variable JAVA_OPTS qui speciafie la taille de JVM utilise a la compilation\n\n")    
+    var d: Double = 12.355353543
+    var dd: Double = d
+    var i: Int = 122
+    var ii: Int = dd.toInt
+    d = i
+    var a, b, c :Int = 12
+
+    print("\n   1-) Cast Double -> Int : \n\tIci il ya cast implicite du type inferieur (Int) vers un type supperieu (Double)\n\t i= " + i + ", Double(i)=" + d + "\n\tCast Explicite: Double -> Int dd= "+ dd + ", Integer(dd)= "+ii)
+    print("\n   2-) Le cast en exercie: \n\tVoir block precedent")
+    print("\n   3-) Creer plusieur variable sur une meme instruction \n\tVoir plus haut dans le code. les valeurs sont: a= "+a+",b= "+b+" et c= "+c+"\n\n")
 
 }
