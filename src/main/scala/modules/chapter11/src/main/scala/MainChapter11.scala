@@ -1,5 +1,8 @@
 package chapter11
 
+import  chapter11.notes.NoteChapter11
+import  chapter11.exercices.ExerciceChapter11
+
 /**
   * @author Temateu Roslyn
   * @email temateuroslynf32@gmail.com
@@ -7,8 +10,9 @@ package chapter11
 class MainChapter11 {
   val message = "Hello from Chapter 11, I was compiled with Scala 3! :)"
 
-  def run: Unit =
+  def run(): Unit =
     println("==================  Debut de l'execution du chapitre 11  ==========================\n")
-    println(message)
+    new NoteChapter11().run()
+    new ExerciceChapter11().run()
     println("\n==================  Fin de l'execution du chapitre 11  ==========================")
 }

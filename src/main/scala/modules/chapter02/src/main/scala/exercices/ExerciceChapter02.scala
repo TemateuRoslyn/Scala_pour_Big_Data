@@ -1,10 +1,19 @@
 package chapter02.exercices
 
-object ExerciceChapter02 {
+import ressource.Log
 
-  def run: Unit =
+import  shared.CustomParent
+class ExerciceChapter02 extends CustomParent {
+
+  def run(): Unit =
+    val message:       String = "\t From chapter 03 \n\nMessage: Maestros apprend le language scala"
+
+
     println("\n\nB - Exercice du chapitre 02 :")
     println("    -------------------------\n")
+
+    writeLog(message, Log.chapter02_log_path)
+
     print("\n   1-) Installer Scala sur Linux sans Connexion: \n\t- Pour ce faire il suffit d'avoir l'archive de sbt a disposition puis de la \n\tdécompresser dans votre répertoire de travail")
     print("\n   2-) scala -help: \n\tAffiche dans la console toute les commandes accessible via le REPL.")
     print("\n   3-) Plusieur version de scala ?: \n\t- Oui c'est possible, Exemple d'installation: cs install scala:2.11.12.")

@@ -1,9 +1,9 @@
-package chapter03.notes
+package chapter04.notes
 
-class NoteChapter03 {
+class NoteChapter04 {
 
   def run(): Unit =
-    println("\nA - Notes pour le chapitre 03 :")
+    println("\nA - Notes pour le chapitre 04 :")
     println("    ---------------------------\n")
     print("\n   Les notes pour ce chapitres serons bientot disponibles\n\n")
 }
