@@ -16,9 +16,19 @@ class ExerciceChapter07 extends CustomParent  {
 
     writeLog(message, Log.chapter07_log_path)
 
-    print("\n   1-) Utilisation de la tabulation: \n\tDans le cas des entiers ou des chaine, la tabulation permet d'avoir toute les information sur le type d'une variale.")
-    print("\n   2-) Exemple de commade: \n\t:sh  Ex: :sh ls -al \n\t:load Ex: :load /path/to/file")
-    print("\n   3-) spark-shell ?: \n\tLes commandes son disponibles sur spark-shell egalement.")
-    print("\n   4-) Augmenter la mémoire de scala ?: \n\tIl faut utiliser la variable JAVA_OPTS qui speciafie la taille de JVM utilise a la compilation\n\n")    
+    val res = {
+      val age = 27
+      val name = "Maestros"
+      name + " a " + age
+    }
 
+
+    print("\n   1-) Cas d'utilisation des blobks de code: \n\t" + """
+    val res = {
+      val age = 27
+      val name = "MAestros"
+      name + " a " + age
+    }
+    
+    val = """ + res)
 }
