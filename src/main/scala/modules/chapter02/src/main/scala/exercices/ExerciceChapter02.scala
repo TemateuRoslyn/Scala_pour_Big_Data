@@ -1,9 +1,9 @@
-package chapter01.exercices
+package chapter02.exercices
 
-object ExerciceChapter01 {
+object ExerciceChapter02 {
 
   def run: Unit =
-    println("\n\nB - Exercice du chapitre 01 :")
+    println("\n\nB - Exercice du chapitre 02 :")
     println("    -------------------------\n")
     print("\n   1-) Définition de mot clés: \n\tJVM: JAVA VIRTUAL MACHINE \n\tJRE: JAVA RUNTIME ENVIRONNMENT \n\tJDK: JAVA DEVELOPMENT KIT \n\tBytecode: Code executable par une JVM")
     print("\n   2-) Pourquoi Scala a été dévéloppé: \n\tA la base Scala a été dévéloppé pour concurrencer Java qui était très lent.")
