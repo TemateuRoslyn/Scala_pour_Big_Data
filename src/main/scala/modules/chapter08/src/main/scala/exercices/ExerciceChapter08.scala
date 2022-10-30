@@ -1,6 +1,6 @@
 package chapter08.exercices
 
-import ressource.Log
+import ressource.Constant
 
 import  shared.CustomParent
 
@@ -14,7 +14,7 @@ class ExerciceChapter08 extends CustomParent  {
     println("\n\nB - Exercice du chapitre 08 :")
     println("    -------------------------\n")
 
-    writeLog(message, Log.chapter08_log_path)
+    writeLog(message, Constant.chapter08_log_path)
 
     print("\n   2-) Fonctoin/Method en scala : \n\t une fonction ecrite dans dans le cadre d'une classe et accesible a toute les instances\n\t de la classe est une methode")
     print("\n   3-) Exemple d'une fonction recurssive: \n\t Factoriel 7 = "+ factoriel(7))

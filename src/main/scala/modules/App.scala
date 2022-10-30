@@ -19,7 +19,7 @@ import chapter14.MainChapter14
 
 import exceptions.OutOfChoiceException
 
-import ressource.Log
+import ressource.Constant
 
 import  shared.CustomParent
 
@@ -204,16 +204,16 @@ class App extends CustomParent {
   def removeLogFiles() : Unit =
     var i: Int = 1
 
-    val main_file = new File(Log.main_log_path)
+    val main_file = new File(Constant.main_log_path)
     main_file.delete()
 
     while (i<=14)
-      var path: String = Log.path
+      var base_logs_path: String = Constant.base_logs_path
       if(i<10)
-        val file = new File(path + "chapter0" + i +"_log.txt")
+        val file = new File(base_logs_path + "chapter0" + i +"_log.txt")
         file.delete()
       else
-        val file = new File(path + "chapter" + i +"_log.txt")
+        val file = new File(base_logs_path + "chapter" + i +"_log.txt")
         file.delete()
       i+=1
   

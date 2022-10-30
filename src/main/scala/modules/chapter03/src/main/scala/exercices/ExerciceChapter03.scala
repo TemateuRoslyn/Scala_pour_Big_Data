@@ -1,6 +1,6 @@
 package chapter03.exercices
 
-import ressource.Log
+import ressource.Constant
 
 import  shared.CustomParent
 
@@ -14,7 +14,7 @@ class ExerciceChapter03 extends CustomParent  {
     println("\n\nB - Exercice du chapitre 03 :")
     println("    -------------------------\n")
 
-    writeLog(message, Log.chapter03_log_path)
+    writeLog(message, Constant.chapter03_log_path)
 
     print("\n   1-) Utilisation de la tabulation: \n\tDans le cas des entiers ou des chaine, la tabulation permet d'avoir toute les information sur le type d'une variale.")
     print("\n   2-) Exemple de commade: \n\t:sh  Ex: :sh ls -al \n\t:load Ex: :load /path/to/file")

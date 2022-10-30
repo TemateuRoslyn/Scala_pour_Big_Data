@@ -1,6 +1,6 @@
 package chapter02.exercices
 
-import ressource.Log
+import ressource.Constant
 
 import  shared.CustomParent
 class ExerciceChapter02 extends CustomParent {
@@ -12,7 +12,7 @@ class ExerciceChapter02 extends CustomParent {
     println("\n\nB - Exercice du chapitre 02 :")
     println("    -------------------------\n")
 
-    writeLog(message, Log.chapter02_log_path)
+    writeLog(message, Constant.chapter02_log_path)
 
     print("\n   1-) Installer Scala sur Linux sans Connexion: \n\t- Pour ce faire il suffit d'avoir l'archive de sbt a disposition puis de la \n\tdécompresser dans votre répertoire de travail")
     print("\n   2-) scala -help: \n\tAffiche dans la console toute les commandes accessible via le REPL.")

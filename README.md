@@ -106,3 +106,13 @@ Ce package contient toutes des classes d'exceptions personnalisées et utilisabl
 
 `src/main/scala/exection/OutOfChoiceException.scala`
 
+## Le package des  fichiers de scripts personnalisés
+
+se sont des fichier scala qui seront chargés dans la console et dont le code sera 
+exécuté qpres avoir été chargé:
+
+`src/main/scala/scripts`
+
+`src/main/scala/scripts/CustomCalc.scala`
+
+
