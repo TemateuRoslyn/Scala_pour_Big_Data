@@ -1,6 +1,6 @@
 package chapter04.exercices
 
-import ressource.Log
+import ressource.Constant
 
 import  shared.CustomParent
 
@@ -14,7 +14,7 @@ class ExerciceChapter04 extends CustomParent  {
     println("\n\nB - Exercice du chapitre 04 :")
     println("    -------------------------\n")
 
-    writeLog(message, Log.chapter04_log_path)
+    writeLog(message, Constant.chapter04_log_path)
 
     var d: Double = 12.355353543
     var dd: Double = d

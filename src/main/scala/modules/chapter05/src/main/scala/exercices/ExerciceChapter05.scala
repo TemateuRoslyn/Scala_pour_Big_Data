@@ -1,6 +1,6 @@
 package chapter05.exercices
 
-import ressource.Log
+import ressource.Constant
 
 import  shared.CustomParent
 
@@ -14,7 +14,7 @@ class ExerciceChapter05 extends CustomParent  {
     println("\n\nB - Exercice du chapitre 05 :")
     println("    -------------------------\n")
 
-    writeLog(message, Log.chapter05_log_path)
+    writeLog(message, Constant.chapter05_log_path)
 
     print("\n   1-) Limitation des type: \n\tLes paramètres de type sont effacés lors de l'exécution. Vous ne pouvez pas effectuer de vérifications \n\tde type à l'exécution sur les paramètres de type ou les types structurels. Il s'agit d'une zone constante \n\td'erreurs, car la correspondance de modèles encourage en fait les vérifications de type à l'exécution. \n\t(Vous recevez un avertissement, mais j'ai vu ceux-ci ignorés trop souvent).")
     print("\n   2-) Les fonctions disponible pour le type Int: \n\tList: MaxValue, MinValue, box, int2double, int2float, int2long, toString, unbox...")

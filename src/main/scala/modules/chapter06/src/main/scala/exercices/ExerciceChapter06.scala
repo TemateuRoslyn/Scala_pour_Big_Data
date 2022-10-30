@@ -1,6 +1,6 @@
 package chapter06.exercices
 
-import ressource.Log
+import ressource.Constant
 
 import  shared.CustomParent
 
@@ -14,7 +14,7 @@ class ExerciceChapter06 extends CustomParent  {
     println("\n\nB - Exercice du chapitre 06 :")
     println("    -------------------------\n")
 
-    writeLog(message, Log.chapter06_log_path)
+    writeLog(message, Constant.chapter06_log_path)
 
     val carBudget = 70
     if (carBudget < 30) {

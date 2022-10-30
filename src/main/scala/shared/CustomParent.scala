@@ -2,7 +2,7 @@ package shared
 
 import java.io.{ File, FileOutputStream }
 
-import ressource.Log
+import ressource.Constant
 
 /**
   * @author Temateu Roslyn
@@ -39,7 +39,7 @@ class CustomParent {
      * @param consoleMessage
      */
     def writeMainLog(consoleMessage: String = ""): Unit =
-        val fos = new FileOutputStream(new File(Log.main_log_path))
+        val fos = new FileOutputStream(new File(Constant.main_log_path))
         Console.withOut(fos) { println(consoleMessage) }
 
 

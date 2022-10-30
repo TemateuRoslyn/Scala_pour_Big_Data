@@ -1,5 +1,5 @@
 package chapter01.exercices
-import ressource.Log
+import ressource.Constant
 
 import  shared.CustomParent
 
@@ -11,7 +11,7 @@ class ExerciceChapter01 extends CustomParent {
     println("\n\nB - Exercice du chapitre 01 :")
     println("    -------------------------\n")
 
-    writeLog(message, Log.chapter01_log_path)
+    writeLog(message, Constant.chapter01_log_path)
 
     print("\n   1-) Définition de mot clés: \n\tJVM: JAVA VIRTUAL MACHINE \n\tJRE: JAVA RUNTIME ENVIRONNMENT \n\tJDK: JAVA DEVELOPMENT KIT \n\tBytecode: Code executable par une JVM")
     print("\n   2-) Pourquoi Scala a été dévéloppé: \n\tA la base Scala a été dévéloppé pour concurrencer Java qui était très lent.")
