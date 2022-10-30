@@ -56,4 +56,34 @@ class CustomParent {
     
 
 
+    /**
+     * Cette fontion chercher une chaine dans une autres et compte le nombre d'occurence
+     *
+     * @param text
+     * @param pattern
+     * @return
+     */
+    def coundWordOcc(text: String, pattern: String): Int = 
+        var count: Int = 0
+        for (rawWord <- text.split(" ")) {
+                val word = rawWord.toLowerCase()
+                if(word.equals(pattern.toLowerCase())) { count =count+1}
+        }
+        count
+
+    /**
+      * Evalue si un nombre est pair
+      *
+      * @param number
+      * @return
+      */
+    def isEven(number: Int) = number % 2 == 0
+
+    /**
+      * Evalue si un nombre est impair
+      *
+      * @param number
+      * @return
+      */
+    def isOdd(number: Int) = !isEven(number)
 }

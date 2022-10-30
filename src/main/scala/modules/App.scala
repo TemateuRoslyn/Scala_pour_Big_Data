@@ -42,7 +42,7 @@ class App extends CustomParent {
         begin()
     } catch {
         case ex : Throwable => {
-          customPrintln("Erreur: Une erreur inconue: Fin du programme... \n " + ex.getMessage())
+          customPrintln("Erreur: Une erreur inconue: Fin du programme... \n Error = " + ex.getStackTrace())
         }
     }
 

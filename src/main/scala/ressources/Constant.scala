@@ -9,7 +9,9 @@ package object Constant {
 
     val base_logs_path:     String = base_scala_path + "/logs/"
     val base_scripts_path:  String = base_scala_path + "/scripts/"
+    val base_ressource_path:String = base_scala_path + "/ressources/"
     
+    val description_txt:    String = base_ressource_path + "files/description.txt"
     val main_log_path:      String = base_logs_path + "main_log.txt"
     val custom_calc_path:   String = base_scripts_path + "CustomCalc.scala"
 
