@@ -35,8 +35,7 @@ class ExerciceChapter09 extends CustomParent  {
     val chunkSize = 128 * 1024
     val file_lines = ""
     val iterator = Source.fromFile(Constant.custom_calc_path).getLines.grouped(chunkSize)
-    iterator.foreach { lines => lines.map((line: String) => print(" \n\t\t" + line))
-  }
+    iterator.foreach { lines => lines.map((line: String) => print(" \n\t\t" + line)) }
   
     print("\n   4-) Apprend two list: \n\t List(1,2,3) +  List(4,5,6) = "+(List(1,2,3) ++ List(4,5,6)))
 
@@ -82,9 +81,7 @@ class ExerciceChapter09 extends CustomParent  {
     
     println("\n\n")
 
-  def isEven(number: Int) = number % 2 == 0
 
-  def isOdd(number: Int) = !isEven(number)
 
   def extractCharacter(item: String): String = "".appended(item.charAt(0)).appended(item.charAt(item.length()-1))
 }

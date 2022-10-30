@@ -1,0 +1,7 @@
+==================  Contenu du fichier description.txt ==================
+
+
+Ceci est une description de la vie alors la vie c'est quelque chose qui anime l'homme aime
+par defaut on se console de la vie donc peace.
+
+==================  Fin du fichier description.txt ==================
